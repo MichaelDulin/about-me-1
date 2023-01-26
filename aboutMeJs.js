@@ -73,25 +73,28 @@ function q3() {
 
 }
 
-let askFour = prompt("Am I 29?").toLowerCase()
-// console.log(`The user wrote ${askFour}`)
-if (askFour === "no" || askFour === "n") {
-    // console.log("True. I'm 30")
-    alert("True. I'm 30 :(")
+function q4() {
+    let askFour = prompt("Am I 29?").toLowerCase()
+    // console.log(`The user wrote ${askFour}`)
+    if (askFour === "no" || askFour === "n") {
+        // console.log("True. I'm 30")
+        alert("True. I'm 30 :(")
+    }
+    else if (askFour === "yes" || askFour === "y") {
+        // console.log("I wish. I'm 30 :(")
+        alert("I wish. I'm 30 :(")
+    }
+    else if (askFour !== "yes" || askFour !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askFour !== "y" || askFour !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
-else if (askFour === "yes" || askFour === "y") {
-    // console.log("I wish. I'm 30 :(")
-    alert("I wish. I'm 30 :(")
-}
-else if (askFour !== "yes" || askFour !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askFour !== "y" || askFour !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
-}
+
 
 let askFive = prompt("Am I a Coboys fan?").toLowerCase()
 // console.log(`The user wrote ${askFive}`)
