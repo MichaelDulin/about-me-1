@@ -1,5 +1,11 @@
 "use strict"
 
+q1();
+q2();
+q3();
+q4();
+q5();
+
 function q1() {
     let askOne = prompt("Am I from Washington?").toLowerCase()
     // console.log(`The user wrote ${askOne}`)
@@ -22,24 +28,26 @@ function q1() {
     }
 }
 
-let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
-// console.log(`The user wrote ${askTwo}`)
-if (askTwo === "yes" || askTwo === "y") {
-    // console.log("Boxers are the best!")
-    alert("Boxers are the best!")
-}
-else if (askTwo === "no" || askTwo === "n") {
-    // console.log("Not right. Boxers are the best.")
-    alert("Not right. Boxers are the best.")
-}
-else if (askTwo !== "yes" || askTwo !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askTwo !== "y" || askTwo !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+function q2() {
+    let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
+    // console.log(`The user wrote ${askTwo}`)
+    if (askTwo === "yes" || askTwo === "y") {
+        // console.log("Boxers are the best!")
+        alert("Boxers are the best!")
+    }
+    else if (askTwo === "no" || askTwo === "n") {
+        // console.log("Not right. Boxers are the best.")
+        alert("Not right. Boxers are the best.")
+    }
+    else if (askTwo !== "yes" || askTwo !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askTwo !== "y" || askTwo !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
 let askThree = prompt("Do I like tattoos").toLowerCase()
