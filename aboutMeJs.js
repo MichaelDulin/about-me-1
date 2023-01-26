@@ -95,25 +95,26 @@ function q4() {
     }
 }
 
-
-let askFive = prompt("Am I a Coboys fan?").toLowerCase()
-// console.log(`The user wrote ${askFive}`)
-if (askFive === "yes" || askFive === "y") {
-    // console.log("Yeah. Next year is gonna be our year.")
-    alert("Yeah. Next year is gonna be our year.")
-}
-else if (askFive === "no" || askFive === "n") {
-    // console.log("Yes I'm a Cowboys fan :(")
-    alert("Yes I'm a Cowboys fan :(")
-}
-else if (askFive !== "yes" || askFive !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askFive !== "y" || askFive !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+function q5() {
+    let askFive = prompt("Am I a Coboys fan?").toLowerCase()
+    // console.log(`The user wrote ${askFive}`)
+    if (askFive === "yes" || askFive === "y") {
+        // console.log("Yeah. Next year is gonna be our year.")
+        alert("Yeah. Next year is gonna be our year.")
+    }
+    else if (askFive === "no" || askFive === "n") {
+        // console.log("Yes I'm a Cowboys fan :(")
+        alert("Yes I'm a Cowboys fan :(")
+    }
+    else if (askFive !== "yes" || askFive !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askFive !== "y" || askFive !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
 let getUserFullName = prompt("What's your first and last name.")
