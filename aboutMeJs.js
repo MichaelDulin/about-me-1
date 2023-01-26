@@ -9,15 +9,12 @@ else if (askOne === "yes" || askOne === "y") {
     // console.log("No, I'm from Cali.")
     alert("No, I'm from Cali.")
 }
-
 else if (askOne !== "yes" || askOne !== "no") {
     alert("Please answer yes or no.")
 }
-
 else if (askOne !== "y" || askOne !== "n") {
     alert("Please answer yes or no.")
 }
-
 else {
     alert("What?")
 }
@@ -35,11 +32,9 @@ else if (askTwo === "no" || askTwo === "n") {
 else if (askTwo !== "yes" || askTwo !== "no") {
     alert("Please answer yes or no.")
 }
-
 else if (askTwo !== "y" || askTwo !== "n") {
     alert("Please answer yes or no.")
 }
-
 else {
     alert("What?")
 }
@@ -57,11 +52,9 @@ else if (askThree === "no" || askThree === "n") {
 else if (askThree !== "yes" || askThree !== "no") {
     alert("Please answer yes or no.")
 }
-
 else if (askThree !== "y" || askThree !== "n") {
     alert("Please answer yes or no.")
 }
-
 else {
     alert("What?")
 }
@@ -79,11 +72,9 @@ else if (askFour === "yes" || askFour === "y") {
 else if (askFour !== "yes" || askFour !== "no") {
     alert("Please answer yes or no.")
 }
-
 else if (askFour !== "y" || askFour !== "n") {
     alert("Please answer yes or no.")
 }
-
 else {
     alert("What?")
 }
@@ -101,11 +92,9 @@ else if (askFive === "no" || askFive === "n") {
 else if (askFive !== "yes" || askFive !== "no") {
     alert("Please answer yes or no.")
 }
-
 else if (askFive !== "y" || askFive !== "n") {
     alert("Please answer yes or no.")
 }
-
 else {
     alert("What?")
 }
@@ -113,65 +102,56 @@ else {
 let getUserFullName = prompt("What's your first and last name.")
 alert(`Welcome to my site ${getUserFullName}`)
 
-let askSix = parseInt(prompt("Guess a number between 1 and 100,000"))
 let myAnswer = 167
-
+let maxAttempts = 3
+let askSix = parseInt(prompt("Guess a number between 1 and 100,000"))
 
 if (askSix === myAnswer) {
-    alert("Yay")
+    alert("You Are Correct!")
 }
 else if (askSix > 167) {
-    alert("Too High")
-    let guessTwo = parseInt(prompt("Guess a number between 1 and 100,000"))
-    if (guessTwo > 167) {
+    for (let i = 0; i < maxAttempts; i++) {
         alert("Too High")
-        let guessThree = parseInt(prompt("Guess a number between 1 and 100,000"))
-        if (guessThree > 167) {
-            alert("Too High")
-            let guessFour = parseInt(prompt("Guess a number between 1 and 100,000"))
-            if (guessFour > 167) {
-                alert("Too High")
-            }
+        parseInt(prompt("Guess a number between 1 and 100,000"))
+        if (i === maxAttempts - 1) {
+            alert("The Correct Answer Was 167")
         }
+
     }
 
 }
-
 else if (askSix < 167) {
-    alert("Too Low")
-    let secondGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
-    if (secondGuess < 167) {
+    for (let i = 0; i < maxAttempts; i++) {
         alert("Too Low")
-        let thirdGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
-        if (thirdGuess < 167) {
-            alert("Too Low")
-            let fourthGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
-            if (fourthGuess < 167) {
-                alert("Too Low")
-            }
+        parseInt(prompt("Guess a number between 1 and 100,000."))
+
+        if (i === maxAttempts - 1) {
+            alert("The Correct Answer Was 167")
+        }
+
+    }
+}
+else {
+    alert("What?")
+}
+
+let myAnswers = [1, 2, 3]
+let attemptsLeft = 5
+let askSeven = parseInt(prompt("Guess my favorite number."))
+
+if (askSeven === myAnswers) {
+    alert("You Are Correct")
+}
+else {
+    for (let i = 0; i < attemptsLeft; i++) {
+        alert(`Try Again. You Have ${attemptsLeft - i} Left`)
+        parseInt(prompt("Guess my favorite number."))
+
+        if (i === attemptsLeft - 1) {
+            alert("The Correct Answers Were 1, 2, 3")
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
