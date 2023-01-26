@@ -111,4 +111,70 @@ else {
 }
 
 let getUserFullName = prompt("What's your first and last name.")
-document.write(`Welcome to my site ${<strong>getUserFullName</strong>}`)
+alert(`Welcome to my site ${getUserFullName}`)
+
+let askSix = parseInt(prompt("Guess a number between 1 and 100,000"))
+let myAnswer = 167
+
+
+if (askSix === myAnswer) {
+    alert("Yay")
+}
+else if (askSix > 167) {
+    alert("Too High")
+    let guessTwo = parseInt(prompt("Guess a number between 1 and 100,000"))
+    if (guessTwo > 167) {
+        alert("Too High")
+        let guessThree = parseInt(prompt("Guess a number between 1 and 100,000"))
+        if (guessThree > 167) {
+            alert("Too High")
+            let guessFour = parseInt(prompt("Guess a number between 1 and 100,000"))
+            if (guessFour > 167) {
+                alert("Too High")
+            }
+        }
+    }
+
+}
+
+else if (askSix < 167) {
+    alert("Too Low")
+    let secondGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
+    if (secondGuess < 167) {
+        alert("Too Low")
+        let thirdGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
+        if (thirdGuess < 167) {
+            alert("Too Low")
+            let fourthGuess = parseInt(prompt("Guess a number between 1 and 100,000"))
+            if (fourthGuess < 167) {
+                alert("Too Low")
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.write(`Welcome to my site ${getUserFullName}`)
