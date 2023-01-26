@@ -1,22 +1,25 @@
 "use strict"
-let askOne = prompt("Am I from Washington?").toLowerCase()
-// console.log(`The user wrote ${askOne}`)
-if (askOne === "no" || askOne === "n") {
-    // console.log("Right. I'm from Cali.")
-    alert("Right.I'm from Cali")
-}
-else if (askOne === "yes" || askOne === "y") {
-    // console.log("No, I'm from Cali.")
-    alert("No, I'm from Cali.")
-}
-else if (askOne !== "yes" || askOne !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askOne !== "y" || askOne !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+
+function q1() {
+    let askOne = prompt("Am I from Washington?").toLowerCase()
+    // console.log(`The user wrote ${askOne}`)
+    if (askOne === "no" || askOne === "n") {
+        // console.log("Right. I'm from Cali.")
+        alert("Right.I'm from Cali")
+    }
+    else if (askOne === "yes" || askOne === "y") {
+        // console.log("No, I'm from Cali.")
+        alert("No, I'm from Cali.")
+    }
+    else if (askOne !== "yes" || askOne !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askOne !== "y" || askOne !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
 let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
