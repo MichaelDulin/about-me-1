@@ -9,8 +9,17 @@ else if (askOne === "yes" || askOne === "y") {
     // console.log("No, I'm from Cali.")
     alert("No, I'm from Cali.")
 }
+
 else if (askOne !== "yes" || askOne !== "no") {
     alert("Please answer yes or no.")
+}
+
+else if (askOne !== "y" || askOne !== "n") {
+    alert("Please answer yes or no.")
+}
+
+else {
+    alert("What?")
 }
 
 let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
@@ -27,6 +36,14 @@ else if (askTwo !== "yes" || askTwo !== "no") {
     alert("Please answer yes or no.")
 }
 
+else if (askTwo !== "y" || askTwo !== "n") {
+    alert("Please answer yes or no.")
+}
+
+else {
+    alert("What?")
+}
+
 let askThree = prompt("Do I like tattoos").toLowerCase()
 // console.log(`The user wrote ${askThree}`)
 if (askThree === "yes" || askThree === "y") {
@@ -39,6 +56,14 @@ else if (askThree === "no" || askThree === "n") {
 }
 else if (askThree !== "yes" || askThree !== "no") {
     alert("Please answer yes or no.")
+}
+
+else if (askThree !== "y" || askThree !== "n") {
+    alert("Please answer yes or no.")
+}
+
+else {
+    alert("What?")
 }
 
 let askFour = prompt("Am I 29?").toLowerCase()
@@ -55,6 +80,14 @@ else if (askFour !== "yes" || askFour !== "no") {
     alert("Please answer yes or no.")
 }
 
+else if (askFour !== "y" || askFour !== "n") {
+    alert("Please answer yes or no.")
+}
+
+else {
+    alert("What?")
+}
+
 let askFive = prompt("Am I a Coboys fan?").toLowerCase()
 // console.log(`The user wrote ${askFive}`)
 if (askFive === "yes" || askFive === "y") {
@@ -69,5 +102,13 @@ else if (askFive !== "yes" || askFive !== "no") {
     alert("Please answer yes or no.")
 }
 
+else if (askFive !== "y" || askFive !== "n") {
+    alert("Please answer yes or no.")
+}
+
+else {
+    alert("What?")
+}
+
 let getUserFullName = prompt("What's your first and last name.")
-document.write(`Welcome to my site ${getUserFullName}`)
+document.write(`Welcome to my site ${<strong>getUserFullName</strong>}`)
