@@ -50,24 +50,27 @@ function q2() {
     }
 }
 
-let askThree = prompt("Do I like tattoos").toLowerCase()
-// console.log(`The user wrote ${askThree}`)
-if (askThree === "yes" || askThree === "y") {
-    // console.log("Yes I like tattoos.")
-    alert("Yes I like tattoos.")
-}
-else if (askThree === "no" || askThree === "n") {
-    // console.log("Not true. I love tattoos.")
-    alert("Not true. I love tattoos.")
-}
-else if (askThree !== "yes" || askThree !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askThree !== "y" || askThree !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+function q3() {
+    let askThree = prompt("Do I like tattoos").toLowerCase()
+    // console.log(`The user wrote ${askThree}`)
+    if (askThree === "yes" || askThree === "y") {
+        // console.log("Yes I like tattoos.")
+        alert("Yes I like tattoos.")
+    }
+    else if (askThree === "no" || askThree === "n") {
+        // console.log("Not true. I love tattoos.")
+        alert("Not true. I love tattoos.")
+    }
+    else if (askThree !== "yes" || askThree !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askThree !== "y" || askThree !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
+
 }
 
 let askFour = prompt("Am I 29?").toLowerCase()
