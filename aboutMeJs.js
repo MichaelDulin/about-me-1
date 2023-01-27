@@ -1,102 +1,120 @@
 "use strict"
-let askOne = prompt("Am I from Washington?").toLowerCase()
-// console.log(`The user wrote ${askOne}`)
-if (askOne === "no" || askOne === "n") {
-    // console.log("Right. I'm from Cali.")
-    alert("Right.I'm from Cali")
-}
-else if (askOne === "yes" || askOne === "y") {
-    // console.log("No, I'm from Cali.")
-    alert("No, I'm from Cali.")
-}
-else if (askOne !== "yes" || askOne !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askOne !== "y" || askOne !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+
+q1();
+q2();
+q3();
+q4();
+q5();
+
+function q1() {
+    let askOne = prompt("Am I from Washington?").toLowerCase()
+    // console.log(`The user wrote ${askOne}`)
+    if (askOne === "no" || askOne === "n") {
+        // console.log("Right. I'm from Cali.")
+        alert("Right.I'm from Cali")
+    }
+    else if (askOne === "yes" || askOne === "y") {
+        // console.log("No, I'm from Cali.")
+        alert("No, I'm from Cali.")
+    }
+    else if (askOne !== "yes" || askOne !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askOne !== "y" || askOne !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
-let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
-// console.log(`The user wrote ${askTwo}`)
-if (askTwo === "yes" || askTwo === "y") {
-    // console.log("Boxers are the best!")
-    alert("Boxers are the best!")
-}
-else if (askTwo === "no" || askTwo === "n") {
-    // console.log("Not right. Boxers are the best.")
-    alert("Not right. Boxers are the best.")
-}
-else if (askTwo !== "yes" || askTwo !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askTwo !== "y" || askTwo !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
-}
-
-let askThree = prompt("Do I like tattoos").toLowerCase()
-// console.log(`The user wrote ${askThree}`)
-if (askThree === "yes" || askThree === "y") {
-    // console.log("Yes I like tattoos.")
-    alert("Yes I like tattoos.")
-}
-else if (askThree === "no" || askThree === "n") {
-    // console.log("Not true. I love tattoos.")
-    alert("Not true. I love tattoos.")
-}
-else if (askThree !== "yes" || askThree !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askThree !== "y" || askThree !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+function q2() {
+    let askTwo = prompt("Are boxer dogs my favorite type of dog?").toLowerCase()
+    // console.log(`The user wrote ${askTwo}`)
+    if (askTwo === "yes" || askTwo === "y") {
+        // console.log("Boxers are the best!")
+        alert("Boxers are the best!")
+    }
+    else if (askTwo === "no" || askTwo === "n") {
+        // console.log("Not right. Boxers are the best.")
+        alert("Not right. Boxers are the best.")
+    }
+    else if (askTwo !== "yes" || askTwo !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askTwo !== "y" || askTwo !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
-let askFour = prompt("Am I 29?").toLowerCase()
-// console.log(`The user wrote ${askFour}`)
-if (askFour === "no" || askFour === "n") {
-    // console.log("True. I'm 30")
-    alert("True. I'm 30 :(")
-}
-else if (askFour === "yes" || askFour === "y") {
-    // console.log("I wish. I'm 30 :(")
-    alert("I wish. I'm 30 :(")
-}
-else if (askFour !== "yes" || askFour !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askFour !== "y" || askFour !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+function q3() {
+    let askThree = prompt("Do I like tattoos").toLowerCase()
+    // console.log(`The user wrote ${askThree}`)
+    if (askThree === "yes" || askThree === "y") {
+        // console.log("Yes I like tattoos.")
+        alert("Yes I like tattoos.")
+    }
+    else if (askThree === "no" || askThree === "n") {
+        // console.log("Not true. I love tattoos.")
+        alert("Not true. I love tattoos.")
+    }
+    else if (askThree !== "yes" || askThree !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askThree !== "y" || askThree !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
+
 }
 
-let askFive = prompt("Am I a Coboys fan?").toLowerCase()
-// console.log(`The user wrote ${askFive}`)
-if (askFive === "yes" || askFive === "y") {
-    // console.log("Yeah. Next year is gonna be our year.")
-    alert("Yeah. Next year is gonna be our year.")
+function q4() {
+    let askFour = prompt("Am I 29?").toLowerCase()
+    // console.log(`The user wrote ${askFour}`)
+    if (askFour === "no" || askFour === "n") {
+        // console.log("True. I'm 30")
+        alert("True. I'm 30 :(")
+    }
+    else if (askFour === "yes" || askFour === "y") {
+        // console.log("I wish. I'm 30 :(")
+        alert("I wish. I'm 30 :(")
+    }
+    else if (askFour !== "yes" || askFour !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askFour !== "y" || askFour !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
-else if (askFive === "no" || askFive === "n") {
-    // console.log("Yes I'm a Cowboys fan :(")
-    alert("Yes I'm a Cowboys fan :(")
-}
-else if (askFive !== "yes" || askFive !== "no") {
-    alert("Please answer yes or no.")
-}
-else if (askFive !== "y" || askFive !== "n") {
-    alert("Please answer yes or no.")
-}
-else {
-    alert("What?")
+
+function q5() {
+    let askFive = prompt("Am I a Coboys fan?").toLowerCase()
+    // console.log(`The user wrote ${askFive}`)
+    if (askFive === "yes" || askFive === "y") {
+        // console.log("Yeah. Next year is gonna be our year.")
+        alert("Yeah. Next year is gonna be our year.")
+    }
+    else if (askFive === "no" || askFive === "n") {
+        // console.log("Yes I'm a Cowboys fan :(")
+        alert("Yes I'm a Cowboys fan :(")
+    }
+    else if (askFive !== "yes" || askFive !== "no") {
+        alert("Please answer yes or no.")
+    }
+    else if (askFive !== "y" || askFive !== "n") {
+        alert("Please answer yes or no.")
+    }
+    else {
+        alert("What?")
+    }
 }
 
 let getUserFullName = prompt("What's your first and last name.")
